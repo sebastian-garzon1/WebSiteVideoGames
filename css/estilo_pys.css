@@ -1,0 +1,419 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: #0B243B ;
+}
+
+
+#contenedor {
+	background: url(../img/bloque2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 97%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+
+
+/*---------------------ENCABEZADO-----------------------*/
+
+.encabezado {
+	background: url(../img/fondotitulo.png);
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 10px;
+}
+
+h1{
+	color: #60F600;
+	font-size: 2.5em;
+	padding: 12px;
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+}
+
+/*-------------------RELOJ------------------------*/
+
+#reloj{
+	color: #81F781;
+	font-size:1.5em;
+	text-align: center;
+	font-family: 'Rakkas', cursive;
+}
+
+
+
+/*---------------------MENU-------------------*/
+
+.nav_header {
+	width: 90%;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 40px;
+	font-size: 1.2em;
+	line-height: 15px;
+	border-radius:7px;
+	overflow: hidden;
+}
+
+.menu_bar{
+		display:none;
+}
+
+header .nav_header .nav{
+	overflow: hidden;
+	list-style: none;
+	text-align: center;
+}
+
+header .nav_header .nav li {
+	float: left;
+	width: 25%;
+}
+
+header .nav_header .nav li a {
+	background-color: #0B243B;
+	font-family: 'Bungee', cursive;
+	color: #81F781;
+	text-decoration: none;
+	padding: 7px;
+	display: block;
+	height: 40px;
+}
+
+header .nav_header .nav li a:hover{
+	background-color: #424242;
+}
+
+header .nav_header .nav li .submenu {
+	display:none;
+	position: static;
+    width: 400%;
+	
+}
+
+header .nav_header span {
+	margin-right: 10px;
+}
+
+header .nav_header .nav li:hover > .submenu {
+	display:block;
+}
+
+
+
+
+/*-----------------------RESPONSIVE DEL MENU-------------------*/
+
+@media screen and (max-width:800px ) {
+	header .nav_header {
+		width: 80%;
+		height: 100%;
+		margin: 0;
+		position:fixed;
+		background: #0B243B;
+	}
+	
+	header .nav_header .nav li {
+		display: block;
+		width: 100%;
+		float: none;
+		border-bottom: 1px solid rgba (255,255,255, .3);
+	}
+	
+	header .nav_header .nav li:hover > .submenu {
+	display:block;
+	}
+	
+	.menu_bar {
+		display: block;
+		width: 100%;
+		background: #0B243B;
+	}
+	
+	.menu_bar .bt-menu{
+		display: block;
+		padding: 20px;
+		background: #0B243B;
+		color: #81F781;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 2em;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+}
+
+
+/*-----------------CUERPO-------------------*/
+
+h2{
+	background-color: #0B243B;
+	color: 	white;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+	padding: 1px;
+	font-size: 2.2em;
+	font-family: 'Baloo Da', cursive;
+	text-align: center;
+}
+
+
+h3{
+	color: #60F600;
+	font-size: 2em;
+	margin: 15px;
+	margin-top: 30px;
+	font-family: 'Baloo Da', cursive;
+	text-align: center;
+}
+
+
+h4{
+	color: #C3DB53;
+	font-size: 1.3em;
+	margin: 15px;
+	margin-top:10px;
+	margin-bottom:5px;
+	font-family: 'Luckiest Guy', cursive;
+	text-align: center;
+}
+
+
+p{
+	color: #04DDFA;
+	font-size: 1.3em;
+    font-family: 'Chela One', cursive;
+	margin: auto;
+	margin-left:100px;
+	margin-right:100px;
+	margin-bottom:10px;
+	text-align: center;
+}
+
+
+/*------------------RESPONSIVE CUERPO----------------------*/
+
+@media screen and (max-width:800px ) {
+	h1{
+		color: #60F600;
+		font-size: 2.2em;
+		font-family: 'Permanent Marker', cursive;
+		text-align: center;
+	}
+	
+	h2{
+		background-color: #0B243B;
+		color: 	white;
+		width: 50%;
+		margin: auto;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border-radius: 7px;
+		padding: 1px;
+		font-size: 2.1em;
+		font-family: 'Baloo Da';
+		text-align: center;
+	}
+
+
+	h3{
+		color: #60F600;
+		font-size: 1.9em;
+		margin: 15px;
+		margin-top: 30px;
+		font-family: 'Baloo Da';
+		text-align: center;
+	}
+
+
+	h4{
+		color: #C3DB53;
+		font-size: 1.2em;
+		margin: 15px;
+		margin-top:10px;
+		margin-bottom:5px;
+		font-family: 'Luckiest Guy';
+		text-align: center;
+	}
+
+	h5 {
+		font-size: 1.2em;
+		color: #8BBD0E;
+		font-family: 'Baloo Da';
+	}
+
+	p{
+		color: #04DDFA;
+		font-size: 1.2em;
+		font-family: 'Chela One';
+		margin: auto;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-bottom:10px;
+		text-align: center;
+	}
+}
+
+
+/*--------------------TABLA DE PRODUCTOS----------------------*/
+
+.prod {
+	width: 80%;
+	margin-left:10%;
+	margin-right: 10%;
+	margin-bottom:10px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+
+.prod caption{
+    margin-bottom: 12px;
+	font-size:1.6em;
+	color: #60F600;
+	font-family: 'Baloo Da', cursive;
+}
+
+
+.prod th, td{
+	padding: 15px;
+	border: 4px solid #0B243B;
+	font-family: 'Baloo Da', cursive;
+}
+
+
+.prod th {
+	font-size: 1.5em;
+	color: #C3DB53;
+	font-family: 'Baloo Da', cursive;
+}
+
+
+.prod td{
+	font-size: 1.6em;
+	color: red;
+	font-family: 'Luckiest Guy', cursive;
+}
+
+.prod .plataformas{
+	font-size: 1.2em;
+	color: #04DDFA;
+	font-family: 'Luckiest Guy', cursive;
+}
+
+@media screen and (max-width:800px ) {
+	.prod {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom:10px;
+		border-collapse: collapse;
+		text-align: center;
+	}
+
+
+	.prod caption{
+		margin-bottom: 12px;
+		font-size:1.2em;
+		color: #60F600;
+		font-family: 'Baloo Da';
+	}
+
+
+	.prod th, td{
+		padding: 3px;
+		border: 4px solid #0B243B;
+		font-family: 'Baloo Da';
+	}
+
+
+	.prod th {
+		font-size: 1.2em;
+		color: #C3DB53;
+		font-family: 'Baloo Da';
+	}
+
+
+	.prod td{
+		font-size: 1.2em;
+		color: red;
+		font-family: 'Luckiest Guy';
+	}
+
+	.prod .plataformas{
+		font-size: 1.2em;
+		color: #04DDFA;
+		font-family: 'Luckiest Guy';
+	}
+}
+
+/*---------------IMAGENES DE CARATULAS PRODUCTOS--------------------*/
+
+.img_prod img{
+    width: 25%;
+    height: 150px;
+}
+
+@media screen and (max-width:800px ) {
+	.img_prod img{
+		width: 60%;
+		height: 120px;
+	}
+}
+
+/*-------------------------BOTON DE SUBIR-------------------------*/
+
+#arriba {
+	background:blue;
+	border:#60F600;
+	color:#60F600;
+	height:60px;
+	width: 60px;
+	margin-top:10px;
+	margin-bottom:10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+/*---------------------PIE DE PAGINA------------------------*/
+
+footer {
+	background: url(../img/bloque3.png);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 97%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	text-align: center;
+}
+
+h5 {
+	font-size: 1.3em;
+	color: #8BBD0E;
+	font-family: 'Baloo Da', cursive;
+}

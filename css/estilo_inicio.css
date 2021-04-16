@@ -1,0 +1,65 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background-color: black;
+}
+
+/* imagen de fondo */
+
+#contenedor{
+	background: url(../img/fondo7.jpg) no-repeat;
+	height:100%;
+	width:100%;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+}	
+
+/*Texto*/
+
+
+p.r1{
+	background: #12568C;
+	margin-top: 10%;
+	margin-left: 20%;
+	margin-right: 20%;
+	border-radius: 7px;
+	width: 60%;
+	padding: 15px;
+	font-family: 'Bangers', cursive;
+	font-size: 2.5em;
+	color: #E71A06;
+	text-align: center;
+}
+
+
+p.r2{
+	background:#12568C;
+	margin-left: 20%;
+	margin-right: 20%;
+	border-radius: 7px;
+	width: 60%;
+	padding: 15px;
+	font-family: 'Bangers', cursive;
+	font-size: 2em;
+	color: green;
+	text-align: center;
+}
+
+
+/* Boton de Inicio */
+
+#boton{
+	margin-top:30px;
+	margin-bottom: 30%;
+	text-align: center;
+	position: relative;
+}
+
+#boton img{
+	height: 150px;
+	width: 30%;
+}

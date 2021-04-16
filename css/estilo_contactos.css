@@ -1,0 +1,345 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: #0B243B ;
+}
+
+
+#contenedor {
+	background: url(../img/bloque3.png);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 97%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+
+
+/*---------------------ENCABEZADO-----------------------*/
+
+.encabezado {
+	background: url(../img/fondotitulo.png);
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 10px;
+}
+
+h1{
+	color: #60F600;
+	font-size: 2.5em;
+	padding: 12px;
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+}
+
+/*-------------------RELOJ------------------------*/
+
+#reloj{
+	color: #81F781;
+	font-size:1.5em;
+	text-align: center;
+	font-family: 'Rakkas', cursive;
+}
+
+
+/*---------------------MENU-------------------*/
+
+.nav_header {
+	width: 90%;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 40px;
+	font-size: 1.2em;
+	line-height: 15px;
+	border-radius:7px;
+	overflow: hidden;
+}
+
+.menu_bar{
+		display:none;
+}
+
+header .nav_header .nav{
+	overflow: hidden;
+	list-style: none;
+	text-align: center;
+}
+
+header .nav_header .nav li {
+	float: left;
+	width: 25%;
+}
+
+header .nav_header .nav li a {
+	background-color: #0B243B;
+	font-family: 'Bungee', cursive;
+	color: #81F781;
+	text-decoration: none;
+	padding: 7px;
+	display: block;
+	height: 40px;
+}
+
+header .nav_header .nav li a:hover{
+	background-color: #424242;
+}
+
+header .nav_header .nav li .submenu {
+	display:none;
+	position: static;
+    width: 400%;
+	
+}
+
+header .nav_header span {
+	margin-right: 10px;
+}
+
+header .nav_header .nav li:hover > .submenu {
+	display:block;
+}
+
+
+
+
+/*-----------------------RESPONSIVE DEL MENU-------------------*/
+
+@media screen and (max-width:800px ) {
+	header .nav_header {
+		width: 80%;
+		height: 100%;
+		margin: 0;
+		position:fixed;
+		background: #0B243B;
+	}
+	
+	header .nav_header .nav li {
+		display: block;
+		width: 100%;
+		float: none;
+		border-bottom: 1px solid rgba (255,255,255, .3);
+	}
+	
+	header .nav_header .nav li:hover > .submenu {
+	display:block;
+	}
+	
+	.menu_bar {
+		display: block;
+		width: 100%;
+		background: #0B243B;
+	}
+	
+	.menu_bar .bt-menu{
+		display: block;
+		padding: 20px;
+		background: #0B243B;
+		color: #81F781;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 2em;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+}
+
+
+
+/*-----------------CUERPO-------------------*/
+
+
+h2{
+	background-color: #0B243B;
+	color: 	white;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+	padding: 1px;
+	font-size: 2.2em;
+	font-family: 'Baloo Da', cursive;
+	text-align: center;
+}
+
+
+h3{
+	color: #60F600;
+	font-size: 2em;
+	margin: 15px;
+	margin-top: 30px;
+	font-family: 'Baloo Da', cursive;
+	text-align: center;
+}
+
+
+h4{
+	color: #C3DB53;
+	font-size: 1.3em;
+	margin: 15px;
+	margin-top:10px;
+	margin-bottom:5px;
+	font-family: 'Luckiest Guy', cursive;
+	text-align: center;
+}
+
+
+p{
+	color: #04DDFA;
+	font-size: 1.3em;
+    font-family: 'Chela One', cursive;
+	margin: auto;
+	margin-left:100px;
+	margin-right:100px;
+	margin-bottom:10px;
+	text-align: center;
+}
+
+
+/*------------------RESPONSIVE CUERPO----------------------*/
+
+@media screen and (max-width:800px ) {
+	h1{
+		color: #60F600;
+		font-size: 2.2em;
+		font-family: 'Permanent Marker', cursive;
+		text-align: center;
+	}
+	
+	h2{
+		background-color: #0B243B;
+		color: 	white;
+		width: 50%;
+		margin: auto;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border-radius: 7px;
+		padding: 1px;
+		font-size: 2.1em;
+		font-family: 'Baloo Da';
+		text-align: center;
+	}
+
+
+	h3{
+		color: #60F600;
+		font-size: 1.9em;
+		margin: 15px;
+		margin-top: 30px;
+		font-family: 'Baloo Da';
+		text-align: center;
+	}
+
+
+	h4{
+		color: #C3DB53;
+		font-size: 1.2em;
+		margin: 15px;
+		margin-top:10px;
+		margin-bottom:5px;
+		font-family: 'Luckiest Guy';
+		text-align: center;
+	}
+
+	h5 {
+		font-size: 1.2em;
+		color: #8BBD0E;
+		font-family: 'Baloo Da';
+	}
+
+	p{
+		color: #04DDFA;
+		font-size: 1.2em;
+		font-family: 'Chela One';
+		margin: auto;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-bottom:10px;
+		text-align: center;
+	}
+}
+
+
+/*----------------CUADRO DE CHAT----------------------*/
+
+form {
+	width: 450px;
+	margin: auto;
+	background: rgba (0,0,0,0.4);
+	padding: 10px 20px;
+	box-sizing: borden-box;
+	margin: 20px;
+	border-radius: 20px;
+}
+
+
+input, textarea {
+	width:100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: borden-box;
+	font-size: 1em;
+	border: none;
+}
+
+
+textarea {
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+}
+
+#boton {
+	background-color: #0B243B;
+	color: #81F781;
+	padding: 20px;
+}
+
+#boton: hover{
+	cursor:pointer;
+}
+
+@media (max-width: 480px){
+	form{
+		width: 100%;
+	}
+}
+
+/*---------------------PIE DE PAGINA------------------------*/
+
+footer {
+	background: url(../img/bloque3.png);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 97%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	text-align: center;
+}
+
+h5 {
+	font-size: 1.3em;
+	color: #8BBD0E;
+	font-family: 'Baloo Da', cursive;
+}
